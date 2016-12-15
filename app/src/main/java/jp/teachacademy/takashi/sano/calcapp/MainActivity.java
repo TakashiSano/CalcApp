@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v){
         EditText editText1 = (EditText)findViewById(R.id.editText1);
         EditText editText2 = (EditText)findViewById(R.id.editText2);
-        double a = Integer.parseInt(editText1.getText().toString());
-        double b = Integer.parseInt(editText2.getText().toString());
+        double a = Double.parseDouble(editText1.getText().toString());
+        double b = Double.parseDouble(editText2.getText().toString());
         Log.d("四則a",String.valueOf(a));
         Log.d("四則b",String.valueOf(b));
 
